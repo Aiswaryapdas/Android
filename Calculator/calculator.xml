@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:text="CALCULATOR"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculator"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="61dp"
+        android:text="Number1:"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num1"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:text="Number2:"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/Number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculator"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="49dp"
+        android:layout_toRightOf="@id/num1"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/Number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Number1"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@id/num2"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="63dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/Number2"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="57dp"
+        android:backgroundTint="@color/black"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="63dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/Number2"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/black"
+        android:layout_toRightOf="@id/button"
+        android:text="-"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="63dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/Number2"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="58dp"
+        android:backgroundTint="@color/black"
+        android:layout_toRightOf="@id/button2"
+        android:text="*"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="63dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/Number2"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="59dp"
+        android:backgroundTint="@color/black"
+        android:layout_toRightOf="@id/button3"
+        android:text="/"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/Number3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button3"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="54dp"
+        android:layout_centerInParent="true"
+        android:text="Result:"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+
+</RelativeLayout>
